@@ -25,8 +25,8 @@ class ParkingFactory extends Factory
         $zoneId = fake()->randomElement([1, 2, 3]);
 
         return [
-            'user_id' => fake()->randomNumber(1, 10),
-            'vehicle_id' => fake()->randomNumber(1, 10),
+            'user_id' => fake()->numberBetween(1, 10),
+            'vehicle_id' => fake()->numberBetween(1, 10),
             'zone_id' => $zoneId,
             'start_time' => $startTime,
             'stop_time' => $stopTime,
