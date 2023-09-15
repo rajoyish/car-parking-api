@@ -17,7 +17,6 @@ class VehicleFactory extends Factory
     public function definition(): array
     {
         return [
-            'user_id' => fake()->unique()->randomElement([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]),
             'plate_number' => strtoupper(fake()->randomLetter()).fake()->numberBetween(100, 999),
         ];
     }
